@@ -9,7 +9,7 @@ function Nav(){
 
  
 
-    const ArrayLi:string[] = ["home","servicos Técnicos","Constas","Eventos"];
+    const ArrayLi:string[] = ["home","servicos Técnicos","Contato","Eventos"];
 
     function menuToggle(){
 
