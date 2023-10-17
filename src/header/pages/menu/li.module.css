@@ -1,0 +1,17 @@
+.li{
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+    background-color: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+.li a{
+    text-decoration: none;
+    color:#598A62;
+    font-weight: bold;
+}

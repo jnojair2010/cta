@@ -1,0 +1,14 @@
+.nav{
+    width: 50%;
+    height: 50px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#f5f5f5;
+    margin-left: 25%;
+    margin-right: 200px;
+    margin-top: 12px;
+    box-shadow: 2px 2px 3px 3px #e0e0e0 ;
+
+}
