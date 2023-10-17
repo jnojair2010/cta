@@ -15,3 +15,19 @@
     color:#598A62;
     font-weight: bold;
 }
+.ulsubmenu{
+    padding: 0%;
+    background-color: white;
+    color: white;
+    box-shadow: 2px 2px 3px 3px #e0e0e0 ;
+
+}
+.ulsubmenu li{
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 35px;
+    padding-top: 8px;
+    list-style-type: none;
+    justify-content: center;
+    box-shadow: 2px 2px 3px 3px #bdbdbd;
+}
