@@ -1,38 +1,55 @@
 import React, {useState} from 'react';
 import styles from './li.module.css';
 
-import Ul from './ulsubmenu';
+import Li2 from './li2';
 
 function Li(props:any){
+   
+    const [isChecked, setChecked] = useState(false);
+    const [ stylemodule, setStylemodule]= useState(styles.ulInativo)
 
-    const [isChecked, setIsChecked] = useState(false);
-    const [modulo1, setModulo1] = useState(styles.modulo1);
-
+    const ArrayLiSubmenuST:string[] = ["Agendar","Relatorio"]
+    
+        function fecharSubmenu(v:boolean){
+            if(v==false){
+                setStylemodule(styles.ulInativo);
+            } 
+        }
+        function abrirSubmenu(){
+            setStylemodule(styles.ulAtivo);
+        }
+        
+        function handleClick(){
+           abrirSubmenu();
+        }
 
     return(
         <>
-            { props.name == "servicos Técnicos"? 
-                <li
-                    className={styles.li}
-                    > 
-                       <a href='#'>Servicos Técnicos</a>
-
-                       <ul className={styles.ulsubmenu}>
-                            <Ul />
-                       </ul> 
-                </li>
-               
-            :(
-                <li
-                    className={styles.li}>
-                    <a href="#"
-                        //href={props.name} 
+            {
+                props.name =="servicos Técnicos"? 
+                <li className={styles.li} >
+                    <a
+                    onClick={handleClick}
                     >{props.name}</a>
-                </li>
-            )
-           }
+                        <ul
+                            className={stylemodule}>
 
-            
+                                { ArrayLiSubmenuST.map(
+                                (ArrayLiSubmenuST)=>
+                                    <Li2 
+                                        abrirSubmenu={fecharSubmenu}
+                                        name={ArrayLiSubmenuST}
+                                    />
+                            )}
+                        </ul>
+                    </li>
+  
+                  : (
+                    <li className={styles.li} ><a>{props.name}</a></li>
+                )
+
+            }
+    
         </>
     );
 }
