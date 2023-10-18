@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Menu from './header/pages/menu/divmenu';
+
+import Home from './header/pages/home/home';
 
 
 function App() {
   return (
     <div className="App">
-        <Menu />
+        <Home />
    
     </div>
   );
