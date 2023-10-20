@@ -45,7 +45,7 @@ function Li(props:any){
                     </li>
   
                   : (
-                    <li className={styles.li} ><a>{props.name}</a></li>
+                    <li className={styles.li} ><a href={props.name}>{props.name}</a></li>
                 )
 
             }
