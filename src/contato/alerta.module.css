@@ -1,0 +1,38 @@
+
+.contato_forme{
+    width: 100%;
+    height: 30rem;
+    float: left;
+    position: relative;
+    background-color: #23b375;
+   /* background-image: url("https://ctalimentoeconsultoria.com.br/wp-content/uploads/2022/10/31170633_368611_gdo-18236904.webp");*/
+    
+}
+
+
+.transp{
+    width: 100%;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2rem;
+    background-color: brown;
+
+}
+.demo_bg{
+    opacity: 0.6;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 40rem;
+
+}
+.demo_bg2{
+    opacity: 0.6;
+    position: relative;
+    margin-top: -40rem;
+    float: left;
+    width: 100%;
+    height: 40rem;
+
+}

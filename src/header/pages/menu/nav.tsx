@@ -7,7 +7,7 @@ import styles from './navmenu.module.css';
 
 
 function Nav(){
-  const ArrayLi:string[] = ["home","servicos Técnicos","Contato","Eventos"];
+  const ArrayLi:string[] = ["home","servicos tecnicos","contato","eventos"];
 
     return(
       <nav className={styles.nav} >
