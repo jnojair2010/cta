@@ -1,8 +1,12 @@
+*{
+    box-sizing: border-box;
+}
 .body_formulario{
     width: 100%;
     height: 40rem;
     float: left;
-    margin-top: 263px;
+
+    margin-top: 162px;
     background-color: white;
-    border: 3px solid #455a64;
+    border: 10px solid #455a64;
 }

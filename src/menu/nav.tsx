@@ -1,7 +1,6 @@
-import React,{useState} from "react";
+import React from "react";
 
 import Li from './li';
-import Li2 from './li2';
 
 import styles from './navmenu.module.css';
 

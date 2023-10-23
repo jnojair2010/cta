@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import styles from './Li2.module.css';
 
 function Li2(props:any){
@@ -17,7 +17,7 @@ function Li2(props:any){
                         props.abrirSubmenu(a);
                         }
                     }
-                    href="#">{props.name}
+                    href={props.name}>{props.name}
                     </a>
              </li>
         </>

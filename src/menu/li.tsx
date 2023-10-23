@@ -5,13 +5,12 @@ import Li2 from './li2';
 
 function Li(props:any){
    
-    const [isChecked, setChecked] = useState(false);
     const [ stylemodule, setStylemodule]= useState(styles.ulInativo)
 
     const ArrayLiSubmenuST:string[] = ["Agendar","Relatorio"]
     
         function fecharSubmenu(v:boolean){
-            if(v==false){
+            if(v===false){
                 setStylemodule(styles.ulInativo);
             } 
         }
@@ -26,7 +25,7 @@ function Li(props:any){
     return(
         <>
             {
-                props.name =="servicos Técnicos"? 
+                props.name ==="servicos tecnicos"? 
                 <li className={styles.li} >
                     <a
                     onClick={handleClick}

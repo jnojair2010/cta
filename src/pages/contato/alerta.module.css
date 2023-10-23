@@ -3,8 +3,8 @@
     width: 100%;
     height: 30rem;
     float: left;
-    position: relative;
-    background-color: #23b375;
+    box-sizing: border-box;
+    
    /* background-image: url("https://ctalimentoeconsultoria.com.br/wp-content/uploads/2022/10/31170633_368611_gdo-18236904.webp");*/
     
 }
@@ -15,8 +15,9 @@
     height: 40rem;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 2rem;
+    margin-top: 0px;
     background-color: brown;
+    z-index: 3;
 
 }
 .demo_bg{
@@ -24,7 +25,9 @@
     position: relative;
     float: left;
     width: 100%;
+    margin-top: 0px;
     height: 40rem;
+    z-index: 0;
 
 }
 .demo_bg2{
@@ -34,5 +37,6 @@
     float: left;
     width: 100%;
     height: 40rem;
+    z-index: 1;
 
 }
