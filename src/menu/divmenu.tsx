@@ -4,8 +4,11 @@ import styles from './divmenu.module.css';
 
 function Menu(){
     return(
-        <div className={styles.divmenu}>
-         <Nav />
+        <div>
+            
+            <div className={styles.divmenu}>
+            <Nav />
+            </div>
         </div>
     );
 
